@@ -1,0 +1,25 @@
+{% macro displayNews(news) %}
+<div class="container">
+{% for display in news %}
+<div class="row">
+<div class="col-md-4">
+    <p>{{ display.name }}</p>
+
+</div>
+<div class="col-md-4">
+    <p>{{ display.description }}</p>
+    
+
+
+</div>
+<div class="col-md-4">
+    <a href="/source/{{display.id}}">Go to article</a>
+
+</div>
+<div class="col-md-4">
+
+</div>
+</div>
+{% endfor %}
+</div>
+{% endmacro %}
